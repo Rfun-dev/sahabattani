@@ -1,9 +1,7 @@
 package com.motionhack.paktani
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
+import androidx.appcompat.app.AppCompatActivity
 import com.motionhack.paktani.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,3 +12,4 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 }
+
