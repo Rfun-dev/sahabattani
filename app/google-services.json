@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "120978707005",
+    "project_id": "paktani-6f369",
+    "storage_bucket": "paktani-6f369.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120978707005:android:5f3df0ac1033f00b909054",
+        "android_client_info": {
+          "package_name": "com.motionhack.paktani"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9fC4BlzBqsjriEYffMS2FS4beAdHCVl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
