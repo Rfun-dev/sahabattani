@@ -9,5 +9,7 @@
     <color name="green_fresh">#245D1B</color>
     <color name="lightgreen">#90D26D</color>
     <color name="lightgrey">#EEEEEE</color>
+    <color name="main_green">#26BC50</color>
+    <color name="broken_white">#FFFBD7</color>
     <color name="yellow">#FFCE31</color>
 </resources>

@@ -22,7 +22,6 @@ class ProductAdapter(private var items : List<Product>) :
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
         val namaBarang: TextView= itemView.findViewById(R.id.tv_nama_barang)
         val hargaBarang: TextView = itemView.findViewById(R.id.tv_harga_barang)
-        val lokasiBarang: TextView = itemView.findViewById(R.id.tv_lokasi_barang)
         val gambarBarang: ImageView = itemView.findViewById(R.id.iv_gambar)
         val btnBeli : Button = itemView.findViewById(R.id.btn_beli)
         val rvItem : CardView = itemView.findViewById(R.id.rv_item_container)
@@ -37,7 +36,6 @@ class ProductAdapter(private var items : List<Product>) :
         Picasso.get().load(currentItem.gambarBarang).into(holder.gambarBarang)
         holder.namaBarang.setText(currentItem.namaBarang)
         holder.hargaBarang.setText(currentItem.hargaBarang)
-        holder.lokasiBarang.setText(currentItem.lokasiBarang)
         holder.btnBeli.setOnClickListener {
             val action = MainFragmentDirections.actionMainFragmentToCheckOutFragment(
                 currentItem.namaBarang!!,

@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.FirstOnBoardingFragment">
+    tools:context=".fragment.FirstOnBoardingFragment"
+    android:background="@color/main_green"
+    android:paddingHorizontal="20dp"
+    >
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
@@ -15,7 +18,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/android_logo"/>
+        android:src="@drawable/logo_sahabatani_besar"
+        app:layout_constraintVertical_bias="0.384"/>
 
     <TextView
         android:id="@+id/thirdScreenTitle"
@@ -26,29 +30,23 @@
         app:layout_constraintTop_toBottomOf="@+id/thirdScreenImage"
         android:layout_marginTop="24dp"
         android:textSize="18dp"
-        android:text="Title 3"/>
-
-    <TextView
-        android:id="@+id/thirdScreenDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/thirdScreenTitle"
-        android:layout_marginTop="8dp"
-        android:textSize="16dp"
-        android:text="lorem ipsum sit dolor amet"/>
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="Sahabatani adalah aplikasi keren yang langsung menghubungkan petani 🌱 dengan konsumen 🛒! Beli produk pertanian segar dan berkualitas tinggi langsung dari sumbernya dengan mudah 📲✨!"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnNext3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Finish"
-        android:background="@drawable/bg_button"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_button_2"
+        android:textColor="@color/main_green"
+        android:textAllCaps="false"
+        android:text="Mulai"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="24dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdScreenTitle" />
 
 
 

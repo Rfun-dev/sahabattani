@@ -3,7 +3,7 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/android_logo"
+            android:src="@drawable/logo_sahabatani"
             />
     </item>
 </layer-list>

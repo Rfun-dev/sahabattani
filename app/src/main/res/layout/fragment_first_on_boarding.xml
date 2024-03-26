@@ -4,18 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.FirstOnBoardingFragment">
+    tools:context=".fragment.FirstOnBoardingFragment"
+    android:background="@color/main_green"
+    android:paddingHorizontal="20dp">
 
     <!-- TODO: Update blank fragment layout -->
+
     <ImageView
         android:id="@+id/firstScreenImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/logo_sahabatani_besar"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/android_logo"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384"/>
 
     <TextView
         android:id="@+id/firstScreenTitle"
@@ -26,29 +31,23 @@
         app:layout_constraintTop_toBottomOf="@+id/firstScreenImage"
         android:layout_marginTop="24dp"
         android:textSize="18dp"
-        android:text="Title 1"/>
-
-    <TextView
-        android:id="@+id/firstScreenDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstScreenTitle"
-        android:layout_marginTop="8dp"
-        android:textSize="16dp"
-        android:text="lorem ipsum sit dolor amet"/>
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="Sahabatani adalah aplikasi keren dengan tampilan UI/UX yang menarik dan tersedia juga tracking yang realtime."/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnNext1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_button_2"
         android:text="Next"
-        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:textColor="@color/main_green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="24dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstScreenTitle" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
