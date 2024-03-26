@@ -48,13 +48,11 @@ class MainFragment : Fragment() {
         if (auth == null){
             Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_loginFragment)
         }
-//        binding?.btnMainLogout?.setOnClickListener {
-//            Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_loginFragment)
-//            FirebaseAuth.getInstance().signOut()
-//        }
         binding?.btnMainLogout?.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_addProductFragment)
+            Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_loginFragment)
+            FirebaseAuth.getInstance().signOut()
         }
+
         binding?.tvSearch?.queryHint = "Cari di Sahabatani"
         recyclerView = view.findViewById(R.id.rv_item)
         recyclerView.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)
