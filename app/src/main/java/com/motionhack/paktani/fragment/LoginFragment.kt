@@ -1,6 +1,7 @@
 package com.motionhack.paktani.fragment
 
 import android.app.Activity
+import android.content.Context
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
@@ -73,9 +74,19 @@ class LoginFragment : Fragment() {
                     }
                 binding?.pbLoadingLogin?.visibility = View.GONE
             }
+            isLoginFinished()
         }
         binding?.btnLoginRegister?.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_loginFragment_to_registerFragment)
         }
+    }
+
+
+
+    private fun isLoginFinished(){
+        val sharedPreferences = requireActivity().getSharedPreferences("isLogin", Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putBoolean("finished",true)
+        editor.apply()
     }
 }
