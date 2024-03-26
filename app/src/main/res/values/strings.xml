@@ -4,7 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="auth_email">email</string>
     <string name="auth_password">password</string>
-    <string name="tv_login">Login</string>
+    <string name="tv_login">Login.</string>
     <string name="enter_emai">Enter Email\n</string>
     <string name="enter_password">Enter Password</string>
     <string name="tv_register">Register</string>
@@ -13,4 +13,23 @@
     <string name="voucher_aktif_n_2_voucher">Voucher Aktif \n 2 Voucher</string>
     <string name="agripoint_n_2_point">Agripoint \n 2 point</string>
     <string name="padinen_n_reward">Padinen \n Reward</string>
+    <string name="padipanen_level_benih">Padipanen - Level Benih</string>
+    <string name="kumpulkan_750_xp_lagi_untuk_naik_level">Kumpulkan +750 XP lagi untuk naik level</string>
+    <string name="dompet_digital">Dompet Digital</string>
+    <string name="aktifkan">Aktifkan</string>
+    <string name="review_1">Kualitas seledrinya bagus, gak layu, masih segar dan pengiriman cepat. The best :)</string>
+    <string name="review_2">Kualitas bagus, seger, mantap</string>
+    <string name="review_3">bagus banget, sayurnya sangat fresh</string>
+    <string name="star_1">4.9</string>
+    <string name="star_2">4.7</string>
+    <string name="star_3">4.7</string>
+    <string name="rating">4.8</string>
+    <string name="harga">Rp.13.000</string>
+    <string name="pilih_varian">Pilih Varian</string>
+    <string name="deskripsi">Beras sehat dan bergizi yang dipanen dengan pemeriksaan kualitas secara berkala. Sehingga menghasilkan beras dengan kualitas terbaik dan terjamin mutunya.</string>
+    <string name="text_deskripsi">Deskripsi</string>
+    <string name="penilaian">Penilaian</string>
+    <string name="isi_review">Kualitas seledrinya bagus, gak layu, masih segar dan pengiriman cepat. The best :)</string>
+    <string name="chat_penjual">chat penjual</string>
+    <string name="detail_barang">Detail Barang</string>
 </resources>

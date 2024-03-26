@@ -5,19 +5,45 @@
     android:id="@+id/cs_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.RegisterFragment">
+    tools:context=".fragment.RegisterFragment"
+    android:background="@color/creame">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tf_register_email"
+        android:id="@+id/tf_register_username"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/gray"
         android:hint="@string/auth_email"
         app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_register_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_register_email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/gray"
+        android:hint="@string/auth_email"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_register_username">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tiet_register_email"
@@ -29,29 +55,36 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tf_register_password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        app:errorEnabled="true"
-        app:endIconMode="password_toggle"
+        android:layout_marginEnd="32dp"
         android:hint="@string/auth_password"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tf_register_email"
-        app:layout_constraintVertical_bias="0.0">
+        app:endIconMode="password_toggle"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_register_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tiet_register_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"/>
+            android:background="@color/gray"
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_register_register"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/green_shape"
         android:text="@string/tv_register"
+        app:backgroundTint="@color/slime"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,12 +104,30 @@
 
     <Button
         android:id="@+id/btn_register_login"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/green_shape"
         android:text="@string/tv_login"
+        android:visibility="gone"
+        app:backgroundTint="@color/green_fresh"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_register_register" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/tv_register"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

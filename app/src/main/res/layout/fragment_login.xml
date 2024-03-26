@@ -5,38 +5,47 @@
     android:id="@+id/cs_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.LoginFragment">
+    tools:context=".fragment.LoginFragment"
+    android:background="@color/slime">
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tf_login_email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/gray_radius"
         android:hint="@string/auth_email"
         app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tiet_login_email"
             android:layout_width="match_parent"
-            android:inputType="textEmailAddress"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tf_login_password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/gray_radius"
         android:hint="@string/auth_password"
-        app:errorEnabled="true"
         app:endIconMode="password_toggle"
+        app:errorEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tf_login_email"
         app:layout_constraintVertical_bias="0.0">
 
@@ -50,10 +59,16 @@
 
     <Button
         android:id="@+id/btn_login_login"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/green_shape"
         android:text="@string/tv_login"
+        android:textColor="@color/slime"
+        android:textStyle="bold"
+        app:backgroundTint="@color/creame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,11 +88,37 @@
 
     <Button
         android:id="@+id/btn_login_register"
+        style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="57dp"
+        android:layout_marginTop="24dp"
         android:text="@string/tv_register"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_login" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="@string/tv_login"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="36dp"
+        android:text="Belum punya akun? "
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login_login" />
 
