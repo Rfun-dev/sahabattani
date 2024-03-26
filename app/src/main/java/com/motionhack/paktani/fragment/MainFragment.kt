@@ -55,8 +55,9 @@ class MainFragment : Fragment() {
         binding?.btnMainLogout?.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_addProductFragment)
         }
+        binding?.tvSearch?.queryHint = "Cari di Sahabatani"
         recyclerView = view.findViewById(R.id.rv_item)
-        recyclerView.layoutManager = GridLayoutManager(this.context, 2)
+        recyclerView.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)
         recyclerView.setHasFixedSize(true)
         productList = arrayListOf()
         firebaseRef = FirebaseDatabase.getInstance().getReference("products")
