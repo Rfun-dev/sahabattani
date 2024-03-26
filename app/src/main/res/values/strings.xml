@@ -8,4 +8,9 @@
     <string name="enter_emai">Enter Email\n</string>
     <string name="enter_password">Enter Password</string>
     <string name="tv_register">Register</string>
+    <string name="say_hi">say hello …</string>
+    <string name="profile">Profile</string>
+    <string name="voucher_aktif_n_2_voucher">Voucher Aktif \n 2 Voucher</string>
+    <string name="agripoint_n_2_point">Agripoint \n 2 point</string>
+    <string name="padinen_n_reward">Padinen \n Reward</string>
 </resources>
