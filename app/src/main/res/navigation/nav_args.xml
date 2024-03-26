@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_args"
-    app:startDestination="@id/chatFragment">
+    app:startDestination="@id/onBoardingFragment">
 
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.motionhack.paktani.fragment.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
@@ -21,7 +21,7 @@
         android:id="@+id/registerFragment"
         android:name="com.motionhack.paktani.fragment.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" >
+        tools:layout="@layout/fragment_register">
         <action
             android:id="@+id/action_registerFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
@@ -37,6 +37,18 @@
         <action
             android:id="@+id/action_mainFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_addProductFragment"
+            app:destination="@id/addProductFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_checkOutFragment"
+            app:destination="@id/checkOutFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_detailProductFragment"
+            app:destination="@id/detailProductFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_checkOutFragment2"
+            app:destination="@id/checkOutFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -48,8 +60,87 @@
             app:destination="@id/mainFragment" />
     </fragment>
     <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.motionhack.paktani.fragment.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding">
+        <action
+            android:id="@+id/action_onBoardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_onBoardingFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.motionhack.paktani.fragment.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" >
+        <action
+            android:id="@+id/action_addProductFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkOutFragment"
+        android:name="com.motionhack.paktani.fragment.CheckOutFragment"
+        android:label="fragment_check_out"
+        tools:layout="@layout/fragment_check_out" >
+        <argument
+            android:name="nama_barang"
+            app:argType="string" />
+        <argument
+            android:name="penjual"
+            app:argType="string" />
+        <argument
+            android:name="harga"
+            app:argType="string" />
+        <argument
+            android:name="gambarBarang"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_checkOutFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_checkOutFragment_to_mainFragment2"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailProductFragment"
+        android:name="com.motionhack.paktani.fragment.DetailProductFragment"
+        android:label="fragment_detail_product"
+        tools:layout="@layout/fragment_detail_product" >
+        <argument
+            android:name="nama_barang"
+            app:argType="string" />
+        <argument
+            android:name="harga_barang"
+            app:argType="string" />
+        <argument
+            android:name="deskripsi_barang"
+            app:argType="string" />
+        <argument
+            android:name="gambar_barang"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailProductFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="penjual"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailProductFragment_to_checkOutFragment"
+            app:destination="@id/checkOutFragment" />
+        <action
+            android:id="@+id/action_detailProductFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
         android:id="@+id/chatFragment"
         android:name="com.motionhack.paktani.chat.ChatFragment"
         android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat" />
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
 </navigation>

@@ -6,15 +6,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.MainFragment">
-
-    <Button
-        android:id="@+id/btn_main_logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="204dp"
-        android:text="Button"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mv_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="0dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@color/lightgreen"
+        tools:ignore="ExtraText">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SearchView
+                android:id="@+id/tv_search"
+                android:layout_width="340dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:hint="Silahkan cari disini"
+                android:background="@drawable/bg_search"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btn_main_logout"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/lightgreen"
+                android:contentDescription="btnLogout"
+                android:src="@drawable/baseline_logout_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_search"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_item"
+        android:layout_width="411dp"
+        android:layout_height="675dp"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mv_topbar"
+        tools:listitem="@layout/list_item"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

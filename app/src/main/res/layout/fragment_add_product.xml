@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.AddProductFragment"
+    android:padding="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tiet_nama_barang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input nama barang"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tiet_deskripsi_barang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input deskripsi barang"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tiet_nama_barang" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tiet_harga_barang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input harga barang"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tiet_deskripsi_barang" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tiet_rating_barang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input rating barang"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tiet_harga_barang" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tiet_penjual_barang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input penjual barang"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tiet_rating_barang" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tiet_lokasi_barang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input penjual barang"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tiet_penjual_barang" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_tambah_gambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Gambar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiet_lokasi_barang"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_tambah_gambar" />
+
+    <TextView
+        android:id="@+id/tv_number_selected_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_simpan" />
+
+    <ImageView
+        android:id="@+id/iv_barang"
+        android:layout_width="105dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
